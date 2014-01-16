@@ -6,9 +6,9 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
 public class UploadMe {
-	private String myfileUploadFileName;
-	private String myfileUploadContentType;
-	private File myfileUpload;
+	private String myfileUploadFileName; //[name of file tag in index.jsp]FileName
+	private String myfileUploadContentType; //[name of file tag in index.jsp]ContentType
+	private File myfileUpload; // same name as in index.jsp
 	private String destFilePath;
 	
 	
