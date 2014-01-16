@@ -5,6 +5,6 @@
 <title>File Upload Success</title>
 </head>
 <body>
-You have successfully uploaded <s:property value="myFileFileName"/>
+<h2>Something has gone terribly wrong!</h2>
 </body>
 </html>

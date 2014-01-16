@@ -12,11 +12,20 @@ public class UploadMe {
 	private String destFilePath;
 	
 	
-	public String execute() throws IOException{
+	public String execute(){
+		boolean flag;
+		try{
 		File destFile = new File(myfileUploadFileName);
-		myfileUpload.renameTo(destFile);
-		setDestFilePath(destFile.getAbsolutePath());
-		return "success";
+		flag= myfileUpload.renameTo(destFile);
+		setDestFilePath(destFile.getAbsolutePath());}
+		catch(Exception e){
+			flag=false;
+		}
+		System.out.println(flag);
+		if (flag)
+			return "success";
+		else
+			return "error";
 	}
 
 
